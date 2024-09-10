@@ -220,10 +220,10 @@ html[dir=rtl] .app__logo-wrapper {
   }
 }
 .app__button-fdroid img {
-  width: 176.4px;
+  width: 250px;
 }
 .app__button-github img {
-  width: 140px;
+  width: 250px;
 }
 .app__button-web {
   margin-left: 12px;
