@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Hedon haven</title>
+    <!-- Redirect to releases if /download is accessed -->
+    <script>
+        if (window.location.pathname === "/download") {
+            window.location.href = "https://github.com/hedon-haven/viewer/releases/latest";
+        }
+    </script>
 
     <meta name="description" content="An adult content aggregator app"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
