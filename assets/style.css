@@ -48,44 +48,42 @@ a:hover {
     color: #5A51FE;
 }
 
-.button {
-    display: flex;
-    background: linear-gradient(65deg, #DA552F, #ea8e39);
+/* Disable styles for certain links */
+a.no-style {
+}
+
+a.no-style:hover {
+}
+
+/* Disabled button styles */
+a[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed; /* Change the cursor to indicate it is not clickable */
+}
+
+.button--download {
+    background-color: #4CAF50; /* Material-like green */
+    border-radius: 20px; /* Rounded corners */
     font-family: "Heebo", sans-serif;
-    color: #fff;
+    font-size: var(--font-xl); /* Even bigger font size */
+    font-weight: bold;
+    padding: 24px 48px; /* Bigger padding for an even larger button */
+    text-transform: none;
+    color: white; /* Ensure text is white */
+    text-decoration: none; /* Remove underline from link-like behavior */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
     display: inline-flex;
-    font-size: var(--font-xxs);
-    letter-spacing: 0px;
-    font-weight: 700;
-    line-height: 16px;
-    text-transform: uppercase;
-    text-decoration: none !important;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
     justify-content: center;
-    padding: 16px 32px;
+    align-items: center;
     text-align: center;
-    white-space: nowrap;
-    box-shadow: 0 8px 24px rgba(32, 43, 54, 0.12);
-    mix-blend-mode: multiply;
-    transition: all 0.15s ease;
 }
 
-.button:hover {
-    color: #fff;
-    box-shadow: 0 8px 24px rgba(32, 43, 54, 0.25);
-}
-
-.button--link {
-    background: rgba(0, 0, 0, 0);
-    color: #5A51FE;
-    box-shadow: none;
-}
-
-.button--link:hover {
-    color: #8751FE;
-    box-shadow: none;
+/* Hover state with a slightly darker green */
+.button--download:hover {
+    background-color: #45A049;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .accent {
