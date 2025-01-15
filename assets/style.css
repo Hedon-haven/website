@@ -218,9 +218,9 @@ html[dir=rtl] .app__logo-wrapper {
 
 .app__buttons {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: -9.8px;
+    flex-wrap: wrap; /* Allow wrapping when necessary */
+    justify-content: space-between; /* Evenly distribute space between buttons */
+    gap: 10px; /* Adds space between buttons */
 }
 
 .app__buttons--mobile {
@@ -243,12 +243,17 @@ html[dir=rtl] .app__logo-wrapper {
     }
 }
 
-.app__button-fdroid img {
-    width: 250px;
+.app__button-badge {
+    flex: 1 1 30%; /* Buttons will take 30% of the width but can shrink and grow */
+    min-width: 120px; /* Prevent buttons from becoming too small */
+    display: flex;
+    justify-content: center; /* Center-align the content inside the button */
+    align-items: center; /* Align the content vertically */
 }
 
-.app__button-github img {
-    width: 250px;
+.app__button-badge img {
+    width: 100%; /* Make the image fill the button container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .app__button-web {
