@@ -82,7 +82,9 @@ a[disabled] {
 
 /* Hover state with a slightly darker green */
 .button--download:hover {
-    background-color: #45A049;
+    color: white; /* Ensure text is white */
+    text-decoration: none; /* Remove underline from link-like behavior */
+    background-color: #317334;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
